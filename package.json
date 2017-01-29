@@ -7,6 +7,10 @@
     "build": "webpack --progress --hide-modules",
     "test": "karma start test/karma.conf.js --singleRun",
     "test:watch": "karma start test/karma.conf.js",
+    "e2e": "npm run e2e:install && npm run e2e:run",
+    "e2e:install": "webdriver-manager update",
+    "e2e:run": "protractor test/protractor.conf.js",
+    "e2e:debug": "protractor test/protractor.conf.js --elementExplorer",
     "clean": "rm -rf dist/*"
   },
   "dependencies": {
@@ -26,6 +30,8 @@
     "@types/webpack": "2.2.2",
     "@types/webpack-env": "1.13.0",
     "aurelia-core-dependencies": "https://github.com/jods4/aurelia-webpack-build.git#aurelia-core-deps",
+    "aurelia-protractor-plugin": "1.0.1",
+    "aurelia-testing": "1.0.0-beta.2.0.1",
     "aurelia-webpack-plugin": "https://github.com/aurelia/webpack-plugin.git#v2.0",
     "awesome-typescript-loader": "3.0.0-beta.18",
     "html-loader": "0.4.4",
@@ -35,6 +41,8 @@
     "karma-jasmine": "1.1.0",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "2.0.2",
+    "protractor": "5.0.0",
+    "ts-node": "2.0.0",
     "typescript": "2.1.5",
     "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0"
