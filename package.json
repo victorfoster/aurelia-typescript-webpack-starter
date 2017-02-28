@@ -15,7 +15,8 @@
     "aurelia-logging-console": "1.0.0",
     "aurelia-templating-binding": "1.2.0",
     "aurelia-templating-resources": "1.2.0",
-    "aurelia-templating-router": "1.0.1"
+    "aurelia-templating-router": "1.0.1",
+    "aurelia-validation": "1.0.0-beta.1.0.1"
   },
   "devDependencies": {
     "@types/core-js": "0.9.34",

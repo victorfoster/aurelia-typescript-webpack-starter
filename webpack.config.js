@@ -15,7 +15,8 @@ module.exports = {
             'aurelia-logging-console',
             'aurelia-templating-binding',
             'aurelia-templating-router',
-            'aurelia-templating-resources'
+            'aurelia-templating-resources',
+            'aurelia-validation'
         ]
     },
 

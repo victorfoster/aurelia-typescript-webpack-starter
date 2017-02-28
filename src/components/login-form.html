@@ -1,0 +1,12 @@
+<template>
+  <form submit.delegate="submit()">
+    <label for="name">Name:</label>
+    <input id="name" type="text" value.bind="name & validate"/>
+
+    <ul>
+      <li repeat.for="error of controller.errors">${error.message}</li>
+    </ul>
+
+    <button type="submit">Submit</button>
+  </form>
+</template>
