@@ -24,7 +24,6 @@
     "aurelia-templating-router": "1.1.0"
   },
   "devDependencies": {
-    "@types/core-js": "0.9.37",
     "@types/jasmine": "2.5.46",
     "@types/webpack": "2.2.12",
     "@types/webpack-env": "1.13.0",
