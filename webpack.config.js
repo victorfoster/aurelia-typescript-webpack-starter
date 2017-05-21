@@ -37,6 +37,12 @@ module.exports = {
             {
                 test: /\.html$/,
                 use: 'html-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader', { loader: 'postcss-loader', options: { importLoaders: 1, sourceMap: true } }
+                ]
             }
         ]
     },

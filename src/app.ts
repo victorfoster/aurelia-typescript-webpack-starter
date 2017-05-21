@@ -3,6 +3,7 @@ import {
     Router,
     RouterConfiguration
 } from 'aurelia-router';
+import 'app.css';
 
 export class App implements ConfiguresRouter {
     configureRouter(config: RouterConfiguration, router: Router): void {
