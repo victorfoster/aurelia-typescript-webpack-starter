@@ -11,21 +11,17 @@
 A minimal [Aurelia][aurelia] starter kit written in [TypeScript][typescript] and
 built using [webpack][webpack].
 
-## Building
-
-The project can be built by running `npm run dev` which will assemble the
-distribution under the `./dist` directory. This directory can be cleaned by
-running `npm run clean`.
-
 ## Developing
 
-The [webpack-dev-server][dev-server] is installed for development purposes and
-can be run with the command `npm start`. This will start the development
+To start development run the command `npm run dev`.  This will start the development
 server at [`http://localhost:8080`][localhost] and open it in your browser, with
 [inline mode][inline] and [hot module replacement][hmr] enabled.
 
-When debugging you can enable Protractor's
-[interactive mode][protractor-interactive] by running `npm run e2e:debug`.
+## Building
+
+The project can be built by running `npm run build` which will assemble the
+distribution under the `./dist` directory. This directory can be cleaned by
+running `npm run clean`.
 
 ## License
 
