@@ -1,0 +1,17 @@
+$main-color: #4d4e53;
+
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
+body {
+    background-color: honeydew;
+    color: $main-color;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+input {
+    font-family: Courier New, Courier, monospace;
+}
