@@ -1,5 +1,6 @@
 let path = require('path'),
     webpack = require('webpack'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
     { AureliaPlugin } = require('aurelia-webpack-plugin');
 
 module.exports = {
@@ -40,14 +41,25 @@ module.exports = {
             },
              {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+                    use: ['css-loader', 'sass-loader'],
+                    fallback: 'style-loader'
+                }))
+
             }
         ]
     },
 
     plugins: [
-        new AureliaPlugin({
-            includeAll: 'src'
-        })
-    ]
+        new AureliaPlugin({ includeAll: 'src' }),
+        new ExtractTextPlugin({ filename: 'app.css' })
+    ],
+
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        historyApiFallback: true,
+        inline: true,
+        open: true
+    }
+
 };
